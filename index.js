@@ -251,7 +251,7 @@ function onDrop(event,num) {
         let oldData = JSON.parse(localStorage.getItem("table1"));
         for(let i=0;i<oldData.length;i++){
             if(oldData[i].name === menu[targetId].name){
-               oldData[i].quantity = oldData[i].quantity + 1;
+               oldData[i].quantity = parseInt(oldData[i].quantity) + 1;
                 localStorage.setItem("table1",JSON.stringify(oldData));
                 window.location.reload();
                 return;
@@ -266,7 +266,7 @@ function onDrop(event,num) {
         let oldData = JSON.parse(localStorage.getItem("table2"));
         for(let i=0;i<oldData.length;i++){
             if(oldData[i].name === menu[targetId].name){
-               oldData[i].quantity = oldData[i].quantity + 1;
+               oldData[i].quantity = parseInt(oldData[i].quantity) + 1;
                 localStorage.setItem("table2",JSON.stringify(oldData));
                 window.location.reload();
                 return;
@@ -281,7 +281,7 @@ function onDrop(event,num) {
         let oldData = JSON.parse(localStorage.getItem("table3"));
         for(let i=0;i<oldData.length;i++){
             if(oldData[i].name === menu[targetId].name){
-               oldData[i].quantity = oldData[i].quantity + 1;
+               oldData[i].quantity = parseInt(oldData[i].quantity) + 1;
                 localStorage.setItem("table3",JSON.stringify(oldData));
                 window.location.reload();
                 return;
@@ -296,7 +296,7 @@ function onDrop(event,num) {
         let oldData = JSON.parse(localStorage.getItem("table4"));
         for(let i=0;i<oldData.length;i++){
             if(oldData[i].name === menu[targetId].name){
-               oldData[i].quantity = oldData[i].quantity + 1;
+               oldData[i].quantity = parseInt(oldData[i].quantity) + 1;
                 localStorage.setItem("table4",JSON.stringify(oldData));
                 window.location.reload();
                 return;
